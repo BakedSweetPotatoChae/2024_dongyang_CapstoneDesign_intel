@@ -13,7 +13,7 @@ from PyQt5 import QtWidgets, uic
 from pyqtgraph import PlotWidget, plot
 import pyqtgraph as pg
 
-
+#hello
 cred = credentials.Certificate("wafer-stepmotor-firebase-adminsdk-foj75-3fc921b3c0.json")
 
 firebase_admin.initialize_app(cred,{
