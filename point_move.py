@@ -21,7 +21,6 @@ firebase_admin.initialize_app(cred,{
 })
 
 
-
 FROM_CLASS_MainWindow = uic.loadUiType("move_set_ui.ui")[0]
 
 class MainWindow(QMainWindow, FROM_CLASS_MainWindow):
@@ -106,50 +105,18 @@ class MainWindow(QMainWindow, FROM_CLASS_MainWindow):
         if(self.move_1_list[self.cout_move_list_number] == 0 and self.cout_move_list_number_sw == False):
             db.reference().update({"move_start":False})
             self.timer.stop()
-        if(self.move_1_list[self.cout_move_list_number] == 1):
-            if(self.cout_move_list_number_sw == False):
-                db.reference().update({"motor_move_1":True})
-                db.reference().update({"move_start":True})
-                self.cout_move_list_number_sw = True
-            else:
-                ref = db.reference('motor_move_1')
-                if(ref.get() == False):
-                    self.cout_move_list_number_sw = False
-                    self.cout_move_list_number += 1
-
-        elif(self.move_1_list[self.cout_move_list_number] == 2):
-            if(self.cout_move_list_number_sw == False):
-                db.reference().update({"motor_move_2":True})
-                db.reference().update({"move_start":True})
-                self.cout_move_list_number_sw = True
-            else:
-                ref = db.reference('motor_move_2')
-                if(ref.get() == False):
-                    self.cout_move_list_number_sw = False
-                    self.cout_move_list_number += 1
-
-        elif(self.move_1_list[self.cout_move_list_number] == 3):
-            if(self.cout_move_list_number_sw == False):
-                db.reference().update({"motor_move_3":True})
-                db.reference().update({"move_start":True})
-                self.cout_move_list_number_sw = True
-            else:
-                ref = db.reference('motor_move_3')
-                if(ref.get() == False):
-                    self.cout_move_list_number_sw = False
-                    self.cout_move_list_number += 1
-
-        elif(self.move_1_list[self.cout_move_list_number] == 4):
-            if(self.cout_move_list_number_sw == False):
-                db.reference().update({"motor_move_4":True})
-                db.reference().update({"move_start":True})
-                self.cout_move_list_number_sw = True
-            else:
-                print("in")
-                ref = db.reference('motor_move_4')
-                if(ref.get() == False):
-                    self.cout_move_list_number_sw = False
-                    self.cout_move_list_number += 1
+        if(self.cout_move_list_number_sw == False):
+            db.reference().update({"motor_move_{}".format(str(self.move_1_list[self.cout_move_list_number])):True})
+            db.reference().update({"move_start":True})
+            self.cout_move_list_number_sw = True
+        else:
+            ref = db.reference('motor_move_{}'.format(str(self.move_1_list[self.cout_move_list_number])))
+            if(ref.get() == False):
+                self.cout_move_list_number_sw = False
+                self.cout_move_list_number += 1
+                if(self.move_1_list[self.cout_move_list_number] == 0):
+                    db.reference().update({"move_start":False})
+                    self.timer.stop()
 
 
     @pyqtSlot(bool)
