@@ -14,7 +14,7 @@ from pyqtgraph import PlotWidget, plot
 import pyqtgraph as pg
 
 #hello
-cred = credentials.Certificate("wafer-stepmotor-firebase-adminsdk-foj75-3fc921b3c0.json")
+cred = credentials.Certificate("C:\Users\대단한 승병이\Desktop\server_rel\wafer-stepmotor-firebase-adminsdk-foj75-3fc921b3c0.json")
 
 firebase_admin.initialize_app(cred,{
     'databaseURL' : 'https://wafer-stepmotor-default-rtdb.firebaseio.com/'
