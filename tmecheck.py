@@ -27,7 +27,6 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.lcdNumber_2.display(0)
-
         
         self.Thread_ = My_Threed(self)
         self.Thread_.start()
