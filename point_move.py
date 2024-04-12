@@ -101,6 +101,7 @@ class MainWindow(QMainWindow, FROM_CLASS_MainWindow):
 
     def move_timer(self):
         ref = db.reference('move_start')
+        self.label.setStyleSheet("Color : green")
         print(self.move_1_list[self.cout_move_list_number])
         if(self.move_1_list[self.cout_move_list_number] == 0 and self.cout_move_list_number_sw == False):
             db.reference().update({"move_start":False})
