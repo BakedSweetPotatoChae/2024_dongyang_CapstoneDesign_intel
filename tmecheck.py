@@ -27,7 +27,7 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.lcdNumber_2.display(0)
-        
+
         self.Thread_ = My_Threed(self)
         self.Thread_.start()
         self.Graph1.setBackground('w')
@@ -46,7 +46,7 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
     def activate_2(self):
         self.error_mw = er_mw("인터넷 연결오류",1)
         self.error_mw.show()
-    
+        
     def activate(self):
         x = self.frameGeometry().x()
         y = self.frameGeometry().y()
