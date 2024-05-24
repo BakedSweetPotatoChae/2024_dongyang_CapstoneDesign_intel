@@ -28,6 +28,9 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+
+        self.setWindowIcon(QIcon('icon/brain.png'))
+        self.setGeometry(300, 300, 300, 200)
         self.frame_3.setLineWidth(2) # 굵기2로
         self.frame_3.setMidLineWidth(3) # 추가 굵기 3으로
         self.frame_3.setFrameShape(QFrame.Panel) # 형태는 Box로
@@ -63,6 +66,11 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
         self.frame_17.setFrameShape(QFrame.Panel) # 형태는 Box로
         self.frame_17.setFrameShadow(QFrame.Raised)
 
+        self.frame_12.setLineWidth(2) # 굵기2로
+        self.frame_12.setMidLineWidth(3) # 추가 굵기 3으로
+        self.frame_12.setFrameShape(QFrame.Panel) # 형태는 Box로
+        self.frame_12.setFrameShadow(QFrame.Raised)
+
 
         self.all_temp_save = [db.reference('hum').get()]
         self.all_hum_save = [db.reference('temp').get()]
@@ -76,12 +84,16 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
         self.Thread_.user_temp.connect(self.button_emit_temp)
         self.Thread_.user_hum.connect(self.button_emit_hum)
         
-        self.pushButton.clicked.connect(self.activate)
+  
         self.pushButton_2.clicked.connect(self.activate_2)
         '''
         '''
         self.hum_temp_table.setRowCount(100)
         self.hum_temp_table.setColumnCount(3)
+
+        self.tableWidget.setRowCount(100)
+        self.tableWidget.setColumnCount(3)
+
         self.hum_wm_button.clicked.connect(self.gr_hum_mw_button_)
         self.temp_wm_button.clicked.connect(self.gr_temp_mw_button_)
 
@@ -156,9 +168,6 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
         self.error_mw = er_mw("인터넷 연결오류",1)
         self.error_mw.show()
 
-    def activate(self):
-        x = self.frameGeometry().x() - 1000
-        y = self.frameGeometry().y() + int(self.frameGeometry().height()-1000)
 
         self.point_move_ui = mw(x,y)
         self.point_move_ui.show()
@@ -248,6 +257,8 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
         self.move_save_start([1,2,3,4,0])
 
     sw_move_start = False
+    motor_count = 0
+    motor_move_sw = [False,False,False,False,False]
     @pyqtSlot(list)
     def button_emit_enabled_check(self, i):
         if(i[0]['move_start'] == True):
@@ -279,6 +290,12 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
                 background-color:rgb(71,200,62)
             }"""
             self.motor_5.setStyleSheet(style)
+            if(self.motor_move_sw[0] == False):
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("1번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("정지 -> 동작"))
+                self.motor_count += 1
+                self.motor_move_sw[0] = True
         else:
             self.motor_5.setText("정지")
             style = """
@@ -286,6 +303,13 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
 	            background-color:rgb(241,95,95)
             }"""
             self.motor_5.setStyleSheet(style)
+            if(self.motor_move_sw[0] == True):
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("1번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("동작 -> 정지"))
+                self.motor_count += 1
+                self.motor_move_sw[0] = False
+
         if(i[2]['motor_2'] == True):
             self.motor_6.setText("동작중")
             style = """
@@ -293,6 +317,12 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
                 background-color:rgb(71,200,62)
             }"""
             self.motor_6.setStyleSheet(style)
+            if(self.motor_move_sw[1] == False):
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("2번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("정지 -> 동작"))
+                self.motor_count += 1
+                self.motor_move_sw[1] = True
         else:
             self.motor_6.setText("정지")
             style = """
@@ -300,6 +330,14 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
 	            background-color:rgb(241,95,95)
             }"""
             self.motor_6.setStyleSheet(style)
+            if(self.motor_move_sw[1] == True):
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("2번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("동작 -> 정지"))
+                self.motor_count += 1
+                self.motor_move_sw[1] = False
+
+
         if(i[3]['motor_3'] == True):
             self.motor_7.setText("동작중")
             style = """
@@ -307,6 +345,13 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
                 background-color:rgb(71,200,62)
             }"""
             self.motor_7.setStyleSheet(style)
+            if(self.motor_move_sw[2] == False):
+                self.motor_5.setStyleSheet(style)
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("3번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("정지 -> 동작"))
+                self.motor_count += 1
+                self.motor_move_sw[2] = True
         else:
             self.motor_7.setText("정지")
             style = """
@@ -314,6 +359,12 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
 	            background-color:rgb(241,95,95)
             }"""
             self.motor_7.setStyleSheet(style)
+            if(self.motor_move_sw[2] == True):
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("3번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("동작 -> 정지"))
+                self.motor_count += 1
+                self.motor_move_sw[2] = False
         if(i[4]['motor_4'] == True):
             self.motor_8.setText("동작중")
             style = """
@@ -321,6 +372,13 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
                 background-color:rgb(71,200,62)
             }"""
             self.motor_8.setStyleSheet(style)
+            if(self.motor_move_sw[3] == False):
+                self.motor_5.setStyleSheet(style)
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("4번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("정지 -> 동작"))
+                self.motor_count += 1
+                self.motor_move_sw[3] = True
         else:
             self.motor_8.setText("정지")
             style = """
@@ -328,6 +386,13 @@ class MainWindow(QMainWindow,FROM_CLASS_MainWindow):
 	            background-color:rgb(241,95,95)
             }"""
             self.motor_8.setStyleSheet(style)
+            if(self.motor_move_sw[3] == True):
+                self.tableWidget.setItem( self.motor_count,0, QTableWidgetItem(str(time.strftime('%x,%X', time.localtime(time.time())))))
+                self.tableWidget.setItem( self.motor_count,1, QTableWidgetItem("4번 모터 동작 감지"))
+                self.tableWidget.setItem( self.motor_count,2,QTableWidgetItem("동작 -> 정지"))
+                self.motor_count += 1
+                self.motor_move_sw[3] = False
+
 
         if((time.time() - self.time_Save > 0.5)and(i[0]['move_start'] == True)):
             try:

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1946</width>
-    <height>953</height>
+    <height>1027</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -94,24 +94,6 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>배달의민족 도현</family>
-             </font>
-            </property>
-            <property name="text">
-             <string>포지션 선택</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QPushButton" name="pushButton_2">
             <property name="maximumSize">
              <size>
@@ -153,287 +135,6 @@
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <layout class="QGridLayout" name="gridLayout_11">
-            <item row="0" column="1">
-             <layout class="QGridLayout" name="gridLayout_14">
-              <item row="0" column="0">
-               <widget class="QFrame" name="frame_18">
-                <property name="maximumSize">
-                 <size>
-                  <width>300</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_15">
-                 <item row="0" column="0">
-                  <layout class="QGridLayout" name="gridLayout_16">
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_22">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>15</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <family>배달의민족 도현</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>작동 여부</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="Line" name="line_11">
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QLabel" name="main_move_2">
-                     <property name="minimumSize">
-                      <size>
-                       <width>200</width>
-                       <height>0</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <family>배달의민족 도현</family>
-                       <pointsize>30</pointsize>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">QFrame{
-	background-color:rgb(241,95,95)
-}</string>
-                     </property>
-                     <property name="text">
-                      <string>정지</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QFrame" name="frame_19">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_17">
-                 <item row="1" column="0">
-                  <widget class="Line" name="line_5">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_12">
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_22">
-                     <item>
-                      <widget class="QLabel" name="label_23">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>모터1</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="label_24">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>모터2</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="label_25">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>모터3</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="label_26">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>모터4</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_23">
-                     <item>
-                      <widget class="QLabel" name="motor_5">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QFrame{
-	background-color:rgb(241,95,95)
-}
-</string>
-                       </property>
-                       <property name="text">
-                        <string>정지</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="motor_6">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QFrame{
-	background-color:rgb(241,95,95)
-}
-</string>
-                       </property>
-                       <property name="text">
-                        <string>정지</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="motor_7">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QFrame{
-	background-color:rgb(241,95,95)
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>정지</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="motor_8">
-                       <property name="font">
-                        <font>
-                         <family>배달의민족 도현</family>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QFrame{
-	background-color:rgb(241,95,95)
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>정지</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </item>
-                 <item row="0" column="0">
-                  <widget class="QLabel" name="label_27">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <family>배달의민족 도현</family>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>개별 동작 여부</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
-            </item>
             <item row="0" column="0">
              <layout class="QVBoxLayout" name="verticalLayout_17">
               <item>
@@ -465,7 +166,7 @@
                     </font>
                    </property>
                    <property name="text">
-                    <string>순차 작동</string>
+                    <string>자동 작동</string>
                    </property>
                   </widget>
                  </item>
@@ -745,6 +446,342 @@
                   <widget class="Line" name="line_7">
                    <property name="orientation">
                     <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_12">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_15">
+                   <item>
+                    <widget class="QLabel" name="label_28">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>배달의민족 도현</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>로봇 작동 로그</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="Line" name="line_8">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget">
+                       <property name="maximumSize">
+                        <size>
+                         <width>520</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="0" column="0">
+               <widget class="QFrame" name="frame_18">
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_16">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_22">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>15</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>배달의민족 도현</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>작동 여부</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="Line" name="line_11">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="main_move_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>배달의민족 도현</family>
+                       <pointsize>30</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>정지</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_19">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_17">
+                 <item row="1" column="0">
+                  <widget class="Line" name="line_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                     <item>
+                      <widget class="QLabel" name="label_23">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터1</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_24">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터2</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_25">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터3</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_26">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터4</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_23">
+                     <item>
+                      <widget class="QLabel" name="motor_5">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}
+</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="motor_6">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}
+</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="motor_7">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="motor_8">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_27">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>배달의민족 도현</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>개별 동작 여부</string>
                    </property>
                   </widget>
                  </item>
