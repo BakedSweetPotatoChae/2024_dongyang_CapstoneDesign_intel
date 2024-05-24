@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1001</width>
-    <height>832</height>
+    <width>1946</width>
+    <height>953</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -18,7 +18,7 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>10000</width>
+    <width>1946</width>
     <height>10000</height>
    </size>
   </property>
@@ -27,7 +27,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="0" column="1">
      <layout class="QVBoxLayout" name="verticalLayout_9">
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -101,6 +101,11 @@
               <height>50</height>
              </size>
             </property>
+            <property name="font">
+             <font>
+              <family>배달의민족 도현</family>
+             </font>
+            </property>
             <property name="text">
              <string>포지션 선택</string>
             </property>
@@ -147,120 +152,604 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_5">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_3">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_2">
-                <item>
-                 <widget class="QLCDNumber" name="lcdNumber">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_5">
-                  <property name="text">
-                   <string>습도 평균</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="0" column="0">
+               <widget class="QFrame" name="frame_18">
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_16">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_22">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>15</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>배달의민족 도현</family>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>작동 여부</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="Line" name="line_11">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="main_move_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>배달의민족 도현</family>
+                       <pointsize>30</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>정지</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
               </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout">
-                <item>
-                 <widget class="QLCDNumber" name="lcdNumber_2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_3">
-                  <property name="text">
-                   <string>현재 습도</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_19">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_17">
+                 <item row="1" column="0">
+                  <widget class="Line" name="line_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                     <item>
+                      <widget class="QLabel" name="label_23">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터1</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_24">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터2</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_25">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터3</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_26">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>모터4</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_23">
+                     <item>
+                      <widget class="QLabel" name="motor_5">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}
+</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="motor_6">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}
+</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="motor_7">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="motor_8">
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QFrame{
+	background-color:rgb(241,95,95)
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>정지</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_27">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>배달의민족 도현</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>개별 동작 여부</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
               </item>
              </layout>
             </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item row="0" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_17">
               <item>
-               <layout class="QVBoxLayout" name="verticalLayout_3">
-                <item>
-                 <widget class="QLCDNumber" name="lcdNumber_3">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_6">
-                  <property name="text">
-                   <string>평균 온도</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+               <widget class="QFrame" name="frame_16">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_19">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>15</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>배달의민족 도현</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>순차 작동</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="Line" name="line_9">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_18">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_8">
+                     <item>
+                      <widget class="QPushButton" name="move_3">
+                       <property name="maximumSize">
+                        <size>
+                         <width>300</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>행동1</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_9">
+                       <item>
+                        <widget class="QLabel" name="label_51_3">
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Point1</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_20">
+                         <property name="minimumSize">
+                          <size>
+                           <width>50</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>50</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>-&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_52_3">
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Point2</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_55">
+                         <property name="minimumSize">
+                          <size>
+                           <width>50</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>50</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>-&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_53_3">
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Point3</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_57">
+                         <property name="minimumSize">
+                          <size>
+                           <width>50</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>50</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>-&gt;</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_54_5">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>100</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>나눔고딕</family>
+                           <pointsize>14</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Point4</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
               </item>
               <item>
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <item>
-                 <widget class="QLCDNumber" name="lcdNumber_4">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_4">
-                  <property name="text">
-                   <string>현재 온도</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+               <widget class="QFrame" name="frame_17">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="2" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_19">
+                     <item>
+                      <widget class="QPushButton" name="move_4">
+                       <property name="text">
+                        <string>모터1</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="move_7">
+                       <property name="text">
+                        <string>모터4</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_20">
+                     <item>
+                      <widget class="QPushButton" name="move_12">
+                       <property name="text">
+                        <string>모터2</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="move_13">
+                       <property name="text">
+                        <string>챔버 열기/UV끄기</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_21">
+                     <item>
+                      <widget class="QPushButton" name="move_14">
+                       <property name="text">
+                        <string>모터3</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="move_15">
+                       <property name="text">
+                        <string>챔버 닫기/UV 작동</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_21">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>배달의민족 도현</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>개별작동</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="Line" name="line_7">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
               </item>
              </layout>
             </item>
@@ -269,10 +758,904 @@
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_6">
             <item>
-             <widget class="PlotWidget" name="Graph1" native="true"/>
+             <widget class="QFrame" name="frame_11">
+              <property name="styleSheet">
+               <string notr="true">QFrame{
+	background-color:rgb(234,234,234)
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QWebEngineView" name="webEngineView">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>1010</width>
+                   <height>820</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>1001</width>
+                   <height>801</height>
+                  </size>
+                 </property>
+                 <property name="url">
+                  <url>
+                   <string>http://192.168.0.132:5000/</string>
+                  </url>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="styleSheet">
+               <string notr="true">QFrame{
+	background-color:rgb(217,229,255);
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QFrame" name="frame">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QFrame" name="cirylarBg_1">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>10</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>300</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.759 rgba(255, 0, 127, 0), stop: 0.760 rgba(85, 170, 255, 255));
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="cirylarPressB">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>181</width>
+                        <height>181</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>182</width>
+                        <height>182</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color:rgb(77, 77, 127,100);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="frame_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>161</width>
+                        <height>161</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius:80px;
+	background-color:rgb(31	,80,181);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label">
+                       <property name="geometry">
+                        <rect>
+                         <x>20</x>
+                         <y>40</y>
+                         <width>121</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>평균 습도</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="hum_number">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>70</y>
+                         <width>71</width>
+                         <height>61</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>40</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="label_5">
+                       <property name="geometry">
+                        <rect>
+                         <x>90</x>
+                         <y>70</y>
+                         <width>41</width>
+                         <height>51</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color:none;
+color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>%</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </widget>
+                     <zorder>cirylarPressB</zorder>
+                     <zorder>cirylarBg_1</zorder>
+                     <zorder>frame_2</zorder>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QFrame" name="frame_4">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QFrame" name="cirylarBg_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>10</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>300</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.759 rgba(255, 0, 127, 0), stop: 0.760 rgba(85, 170, 255, 255));
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="cirylarPressB_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>181</width>
+                        <height>181</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>182</width>
+                        <height>182</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color:rgb(77, 77, 127,100);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="frame_5">
+                      <property name="geometry">
+                       <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>161</width>
+                        <height>161</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius:80px;
+	background-color:rgb(31	,80,181);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_2">
+                       <property name="geometry">
+                        <rect>
+                         <x>20</x>
+                         <y>40</y>
+                         <width>121</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>현재 습도</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="hum_number_2">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>70</y>
+                         <width>71</width>
+                         <height>61</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>40</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="label_9">
+                       <property name="geometry">
+                        <rect>
+                         <x>90</x>
+                         <y>70</y>
+                         <width>41</width>
+                         <height>51</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color:none;
+color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>%</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="hum_wm_button">
+                 <property name="font">
+                  <font>
+                   <family>배달의민족 도현</family>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>습도 그래프 표시</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
             </item>
             <item>
-             <widget class="PlotWidget" name="Graph2" native="true"/>
+             <widget class="QFrame" name="frame_6">
+              <property name="styleSheet">
+               <string notr="true">QFrame{
+	background-color:rgb(250,224,212);
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <item>
+                    <widget class="QFrame" name="frame_7">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QFrame" name="cirylarBg_3">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>10</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>300</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.759 rgba(255, 0, 127, 0), stop: 0.760 rgba(204, 114, 61, 255));
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="cirylarPressB_3">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>181</width>
+                        <height>181</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>182</width>
+                        <height>182</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color:rgb(77, 77, 127,100);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="frame_8">
+                      <property name="geometry">
+                       <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>161</width>
+                        <height>161</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius:80px;
+	background-color:rgb(204,114,61);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_3">
+                       <property name="geometry">
+                        <rect>
+                         <x>20</x>
+                         <y>40</y>
+                         <width>121</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>평균 온도</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="hum_number_3">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>70</y>
+                         <width>71</width>
+                         <height>61</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>40</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="label_6">
+                       <property name="geometry">
+                        <rect>
+                         <x>90</x>
+                         <y>70</y>
+                         <width>41</width>
+                         <height>51</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color:none;
+color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>°C</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <item>
+                    <widget class="QFrame" name="frame_9">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>200</width>
+                       <height>200</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QFrame" name="cirylarBg_4">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>10</width>
+                        <height>10</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>300</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.759 rgba(255, 0, 127, 0), stop: 0.760 rgba(204, 114, 61, 255));
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="cirylarPressB_4">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>181</width>
+                        <height>181</height>
+                       </rect>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>181</width>
+                        <height>181</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>182</width>
+                        <height>182</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius: 90px;
+	background-color:rgb(77, 77, 127,100);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="frame_10">
+                      <property name="geometry">
+                       <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>161</width>
+                        <height>161</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QFrame{
+	border-radius:80px;
+	background-color:rgb(204,114,61);
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_4">
+                       <property name="geometry">
+                        <rect>
+                         <x>20</x>
+                         <y>40</y>
+                         <width>121</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>현재 온도</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="hum_number_4">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>70</y>
+                         <width>71</width>
+                         <height>61</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>20</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>40</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                      <widget class="QLabel" name="label_10">
+                       <property name="geometry">
+                        <rect>
+                         <x>90</x>
+                         <y>70</y>
+                         <width>41</width>
+                         <height>51</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>배달의민족 도현</family>
+                         <pointsize>12</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color:none;
+color: #FFFFFF</string>
+                       </property>
+                       <property name="text">
+                        <string>°C</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="temp_wm_button">
+                 <property name="font">
+                  <font>
+                   <family>배달의민족 도현</family>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>온도 그래프 표시</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="hum_temp_table">
+              <property name="minimumSize">
+               <size>
+                <width>475</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>1100000</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="rowCount">
+               <number>0</number>
+              </property>
+              <property name="columnCount">
+               <number>0</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -298,10 +1681,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PlotWidget</class>
+   <class>QWebEngineView</class>
    <extends>QWidget</extends>
-   <header>pyqtgraph</header>
-   <container>1</container>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
   </customwidget>
  </customwidgets>
  <resources/>
